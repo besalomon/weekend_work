@@ -2,6 +2,21 @@
 
 def find_longest_word(sentence)
 
+array = sentence.split
+p array
+big = ""
+longest = array[0].length
+
+array.each do |index|
+
+if big.size < index.size
+	big = index
+end
+
+end
+
+sentence = big
+
 end
 
 # Driver code - don't touch anything below this line.

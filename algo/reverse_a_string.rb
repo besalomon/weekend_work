@@ -4,8 +4,17 @@
 
 def reverse_a_string(string)
 
+array = string.split('')
+array2 = []
+i = (array.count) - 1
+array.each do |index|
+array2[i] = index
+i = i - 1
 end
 
+string = array2.join
+
+end
 # Driver code - don't touch anything below this line.
 puts "TESTING reverse_a_string..."
 puts
